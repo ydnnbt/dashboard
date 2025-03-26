@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Display</title>
+  </head>
+  <body>
+    <h1>Your Dashboard</h1>
+    <iframe
+      width="90%"
+      height="900"
+      src="https://lookerstudio.google.com/s/uo1CmhWsnbk"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+      sandbox="allow-scripts allow-same-origin allow-popups"
+    ></iframe>
+<script>
+  setInterval(function() {
+    const iframe = document.querySelector("iframe");
+    iframe.src = iframe.src; // Reload iframe every 5 minutes (300,000 milliseconds)
+  }, 300000); 
+</script>
+  </body>
+</html>
